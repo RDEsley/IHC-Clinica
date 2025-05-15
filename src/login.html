@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="/src/favicon/favicon.png">
+
+</head>
+
+<body>
+  <div class="lang">
+    <img src="/src/imagens/bandeira.png" alt="Bandeira do Brasil">
+    Português
+  </div>
+
+  <div class="container">
+    <div class="left">
+      <img src="/src/imagens/logo.png" alt="Logo Healthy" />
+      <p>Bem-vindo(a) de volta</p>
+      <hr style="margin: 30px 0;" />
+      <p>Não tem cadastro?<br><a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <div class="right">
+      <div class="login-title">LOGIN</div>
+      <form>
+        <label for="cpf">CPF <span class="asterisco">*</span></label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" />
+
+        <label for="senha">Senha <span class="asterisco">*</span></label>
+        <input type="password" id="senha" placeholder="Sua Senha" />
+
+        <div class="remember">
+          <input type="checkbox" id="lembrar" />
+          <label for="lembrar">Lembre de mim?</label>
+        </div>
+
+        <button type="submit" class="login-button" href="home.html">ENTRAR</button>
+        
+
+        <div class="forgot">
+          <a href="home.html">Entrar sem Acesso</a><br><br>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+
+  <div class="accessibility">
+    <img src="/src/imagens/img1.png" alt="Acessibilidade 1">
+    <img src="/src/imagens/img2.png" alt="Acessibilidade 2">
+    <img src="/src/imagens/img3.png" alt="Acessibilidade 3">
+  </div>
+</body>
+
+</html>
