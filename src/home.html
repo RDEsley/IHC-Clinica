@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clínica Médica - Home</title>
   <link rel="stylesheet" href="home.css" />
   <link rel="icon" type="image/png" href="/src/favicon/favicon.png">
 
 </head>
+
 <body>
   <header class="header">
     <img src="/src/imagens/logo.png" alt="Logo da Clínica" class="header__logo" />
-    <nav class="header__nav">
+  
+    <div class="header__actions">
+      <div class="lang-switch">
+        <img src="/src/imagens/bandeira.png" alt="Bandeira do Brasil" />
+        <strong>PORTUGUÊS</strong>
+      </div>
+  
       <button id="logout" aria-label="Sair">Sair</button>
-    </nav>
+    </div>
   </header>
+  
 
   <main class="main">
-    <h1 class="main__title">Agendar Consulta</h1>
+    <h1 class="main__title">AGENDAR CONSULTA</h1>
     <section class="calendar-section" aria-label="Calendário de Agendamento">
       <div class="calendar-header">
         <button id="prev-month" aria-label="Mês anterior">←</button>
         <h2 id="month-year"></h2>
         <button id="next-month" aria-label="Próximo mês">→</button>
       </div>
+
       <table class="calendar">
         <thead>
           <tr>
-            <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th>
-            <th>Qui</th><th>Sex</th><th>Sáb</th>
+            <th>Dom</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+            <th>Sáb</th>
           </tr>
         </thead>
         <tbody id="calendar-body">
           <!-- Dias gerados por JS -->
         </tbody>
       </table>
-    </section>
-    <div id="agendamento-info" class="info" aria-live="polite"></div>
     
+    </section>
+
+    <div id="agendamento-info" class="info" aria-live="polite"></div>
+
     <section id="horarios-section" class="horarios" aria-label="Horários disponíveis" hidden>
-        <h2>Horários disponíveis</h2>
-        <div id="horarios-list" class="horarios__lista"></div>
-        <button id="confirmar-agendamento" hidden>Confirmar Agendamento</button>
-      </section>
-      
+      <h2>Horários disponíveis</h2>
+      <div id="horarios-list" class="horarios__lista"></div>
+      <button id="confirmar-agendamento" hidden><strong>CONFIRMAR AGENDAMENTO</strong></button>
+    </section>
   </main>
 
+  <footer class="accessibility">
+    <img src="/src/imagens/img1.png" alt="Acessibilidade 1">
+    <img src="/src/imagens/img2.png" alt="Acessibilidade 2">
+    <img src="/src/imagens/img3.png" alt="Acessibilidade 3">
+  </footer>
+
+  <script src="script.js"></script>
   <script src="calendar.js"></script>
+
 </body>
 </html>
+
+<!-- Desenvolvido por Richard Esley / Rafael Furtado / Fernanda Mey / Vitor de Assis / Ryan / Matheus Brandão  -->

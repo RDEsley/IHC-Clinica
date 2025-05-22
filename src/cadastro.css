@@ -1,0 +1,142 @@
+:root {
+  --primary: #7fcfd3;
+  --background: #e6f3f7;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+.bandeira {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+}
+
+.acessibilidade img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #b2ebf2;
+  margin: 5vh auto;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input,
+select {
+  width: 90%;
+  padding: 7px;
+  margin-top: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox input {
+  width: auto;
+  margin: 0;
+}
+
+.accessibility {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  background-color: #00acc1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  grid-column: 1 / 3;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1 / 3;
+  margin-top: 20px;
+}
+
+.voltar-btn,
+.salvar-btn {
+  background-color: #00acc1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 130px;
+}
+
+.voltar-btn:hover,
+.salvar-btn:hover {
+  background-color: #008b9a;
+}
+
+.senha-requisitos {
+  width: 100%;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  color: #555;
+  padding-left: 2px; 
+}
+
+.senha-requisitos small strong {
+  color: #000;
+}
+
+/* Desenvolvido por Richard Esley / Rafael Furtado / Fernanda Mey / Vitor de Assis / Ryan / Matheus Brandão 

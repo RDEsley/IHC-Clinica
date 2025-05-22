@@ -1,3 +1,5 @@
+// Agentamento do Calendário / Pag Home
+
 const calendarBody = document.getElementById('calendar-body');
 const monthYearLabel = document.getElementById('month-year');
 const prevMonthBtn = document.getElementById('prev-month');
@@ -120,7 +122,7 @@ function mostrarHorarios(data) {
     btnConfirmar.onclick = () => {
       const horario = localStorage.getItem("horarioSelecionado");
       alert(`Consulta agendada para ${data.toLocaleDateString("pt-BR")} às ${horario}.`);
-      // Aqui você pode redirecionar ou salvar no backend futuramente
     };
   }
   
+  // Desenvolvido por Richard Esley / Rafael Furtado / Fernanda Mey / Vitor de Assis / Ryan / Matheus Brandão 

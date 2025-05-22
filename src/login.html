@@ -7,25 +7,23 @@
   <title>Tela de Login</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="/src/favicon/favicon.png">
-
 </head>
 
 <body>
-  <div class="lang">
-    <img src="/src/imagens/bandeira.png" alt="Bandeira do Brasil">
-    Português
-  </div>
+  <header class="lang">
+    <img src="/src/imagens/bandeira.png" alt="Bandeira do Brasil"> <STRONG>PORTUGUÊS</STRONG>
+  </header>
 
-  <div class="container">
-    <div class="left">
+  <main class="container">
+    <section class="left">
       <img src="/src/imagens/logo.png" alt="Logo Healthy" />
       <p>Bem-vindo(a) de volta</p>
-      <hr style="margin: 30px 0;" />
-      <p>Não tem cadastro?<br><a href="cadastro.html">Cadastre-se</a></p>
-    </div>
+      <br>
+      <p>Não tem cadastro?<br><br><a href="cadastro.html">Cadastre-se</a></p>
+    </section>
 
-    <div class="right">
-      <div class="login-title">LOGIN</div>
+    <section class="right">
+      <h1 class="login-title">LOGIN</h1>
       <form>
         <label for="cpf">CPF <span class="asterisco">*</span></label>
         <input type="text" id="cpf" placeholder="000.000.000-00" />
@@ -33,28 +31,35 @@
         <label for="senha">Senha <span class="asterisco">*</span></label>
         <input type="password" id="senha" placeholder="Sua Senha" />
 
-        <div class="remember">
+        <label class="remember">
           <input type="checkbox" id="lembrar" />
-          <label for="lembrar">Lembre de mim?</label>
-        </div>
+          Lembre de mim?
+        </label>
 
-        <button type="submit" class="login-button" href="home.html">ENTRAR</button>
-        
+        <button type="button" id="login-button" class="login-button">ENTRAR</button>
 
-        <div class="forgot">
-          <a href="home.html">Entrar sem Acesso</a><br><br>
+
+        <nav class="forgot">
           <a href="#">Esqueceu a senha?</a>
-        </div>
+        </nav>
       </form>
-      
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="accessibility">
+  <footer class="accessibility">
     <img src="/src/imagens/img1.png" alt="Acessibilidade 1">
     <img src="/src/imagens/img2.png" alt="Acessibilidade 2">
     <img src="/src/imagens/img3.png" alt="Acessibilidade 3">
-  </div>
+  </footer>
+
+  <script>
+    document.getElementById("login-button").addEventListener("click", function () {
+      window.location.href = "home.html";
+    });
+  </script>
+
 </body>
 
 </html>
+
+<!-- Desenvolvido por Richard Esley / Rafael Furtado / Fernanda Mey / Vitor de Assis / Ryan / Matheus Brandão  -->
